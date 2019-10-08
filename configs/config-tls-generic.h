@@ -116,6 +116,11 @@
 #define MBEDTLS_KEY_EXCHANGE_ECJPAKE_ENABLED
 #endif
 
+/* key exchange options */
+#if defined(CONFIG_MBEDTLS_SSL_VERIFY_OPTIONAL_ENABLED)
+#define MBEDTLS_SSL_VERIFY_OPTIONAL_ENABLED
+#endif
+
 /* Supported cipher modes */
 
 #if defined(CONFIG_MBEDTLS_CIPHER_AES_ENABLED)
